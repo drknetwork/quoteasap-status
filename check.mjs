@@ -108,6 +108,7 @@ const html = `<!doctype html>
 </head>
 <body>
 <nav>
+  <a href="https://quoteasap-marketing.vercel.app">Marketing</a>
   <a href="https://web-three-pi-25.vercel.app">App</a>
   <a href="https://help-sandy-iota.vercel.app">Help</a>
   <a href="/">Status</a>

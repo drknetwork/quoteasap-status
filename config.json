@@ -1,5 +1,10 @@
 [
   {
+    "name": "QuoteASAP Marketing",
+    "url": "https://quoteasap-marketing.vercel.app/",
+    "expectedStatus": 200
+  },
+  {
     "name": "QuoteASAP App",
     "url": "https://web-three-pi-25.vercel.app/api/health",
     "expectedStatus": 200,
