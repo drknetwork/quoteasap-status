@@ -1,0 +1,32 @@
+{
+  "QuoteASAP App": [
+    {
+      "name": "QuoteASAP App",
+      "url": "https://web-three-pi-25.vercel.app/api/health",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 553,
+      "timestamp": "2026-07-29T08:51:10.648Z"
+    }
+  ],
+  "QuoteASAP App (homepage)": [
+    {
+      "name": "QuoteASAP App (homepage)",
+      "url": "https://web-three-pi-25.vercel.app/",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 562,
+      "timestamp": "2026-07-29T08:51:10.712Z"
+    }
+  ],
+  "QuoteASAP Help (knowledge base)": [
+    {
+      "name": "QuoteASAP Help (knowledge base)",
+      "url": "https://help-sandy-iota.vercel.app/",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 343,
+      "timestamp": "2026-07-29T08:51:10.495Z"
+    }
+  ]
+}

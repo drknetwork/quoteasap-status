@@ -1,7 +1,63 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>QuoteASAP Status</title></head>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>QuoteASAP Status</title>
+<meta name="description" content="Live status of QuoteASAP services." />
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+  h1 { font-size: 1.5rem; }
+  nav { margin-bottom: 1.5rem; }
+  nav a { margin-right: 1rem; }
+  .banner { padding: 0.75rem 1rem; border-radius: 8px; font-weight: 600; margin-bottom: 1.5rem; }
+  .banner.up { background: #d1fae5; color: #065f46; }
+  .banner.down { background: #fee2e2; color: #991b1b; }
+  .endpoint { border: 1px solid #8884; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+  .endpoint-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 0.5rem; }
+  .dot.up { background: #10b981; }
+  .dot.down { background: #ef4444; }
+  .ticks { display: flex; gap: 2px; overflow-x: auto; padding-bottom: 4px; }
+  .tick { display: inline-block; width: 6px; height: 24px; border-radius: 2px; flex-shrink: 0; }
+  .tick.up { background: #10b981; }
+  .tick.down { background: #ef4444; }
+  .meta { color: #888; font-size: 0.85rem; }
+</style>
+</head>
 <body>
-<p>Status page initializing — the first scheduled check hasn't run yet.</p>
+<nav>
+  <a href="https://web-three-pi-25.vercel.app">App</a>
+  <a href="https://help-sandy-iota.vercel.app">Help</a>
+  <a href="/">Status</a>
+</nav>
+<h1>QuoteASAP Status</h1>
+<div class="banner up">All systems operational</div>
+<div class="endpoint">
+  <div class="endpoint-header">
+    <span><span class="dot up"></span><strong>QuoteASAP App</strong></span>
+    <span class="meta">553ms</span>
+  </div>
+  <div class="ticks"><span class="tick up" title="2026-07-29T08:51:10.648Z — OK (553ms)"></span></div>
+  <div class="meta">Last checked 2026-07-29T08:51:10.648Z</div>
+</div>
+<div class="endpoint">
+  <div class="endpoint-header">
+    <span><span class="dot up"></span><strong>QuoteASAP App (homepage)</strong></span>
+    <span class="meta">562ms</span>
+  </div>
+  <div class="ticks"><span class="tick up" title="2026-07-29T08:51:10.712Z — OK (562ms)"></span></div>
+  <div class="meta">Last checked 2026-07-29T08:51:10.712Z</div>
+</div>
+<div class="endpoint">
+  <div class="endpoint-header">
+    <span><span class="dot up"></span><strong>QuoteASAP Help (knowledge base)</strong></span>
+    <span class="meta">343ms</span>
+  </div>
+  <div class="ticks"><span class="tick up" title="2026-07-29T08:51:10.495Z — OK (343ms)"></span></div>
+  <div class="meta">Last checked 2026-07-29T08:51:10.495Z</div>
+</div>
+<p class="meta">Checked every 5 minutes via GitHub Actions. Generated 2026-07-29T08:51:10.712Z.</p>
 </body>
 </html>
