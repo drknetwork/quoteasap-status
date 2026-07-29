@@ -11,8 +11,8 @@
     "bodyContains": "\"status\":\"ok\""
   },
   {
-    "name": "QuoteASAP App (homepage)",
-    "url": "https://web-three-pi-25.vercel.app/",
+    "name": "QuoteASAP App (sign-in)",
+    "url": "https://web-three-pi-25.vercel.app/sign-in",
     "expectedStatus": 200
   },
   {
