@@ -1,0 +1,18 @@
+[
+  {
+    "name": "QuoteASAP App",
+    "url": "https://web-three-pi-25.vercel.app/api/health",
+    "expectedStatus": 200,
+    "bodyContains": "\"status\":\"ok\""
+  },
+  {
+    "name": "QuoteASAP App (homepage)",
+    "url": "https://web-three-pi-25.vercel.app/",
+    "expectedStatus": 200
+  },
+  {
+    "name": "QuoteASAP Help (knowledge base)",
+    "url": "https://help-sandy-iota.vercel.app/",
+    "expectedStatus": 200
+  }
+]

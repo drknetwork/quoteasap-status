@@ -1,0 +1,39 @@
+name: Status Check
+
+on:
+  schedule:
+    # GitHub Actions' minimum cron granularity is 5 minutes.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo (for the check script/config)
+        uses: actions/checkout@v4
+
+      - name: Checkout gh-pages (the published status site)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: site
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run checks and regenerate the site
+        run: node check.mjs
+
+      - name: Publish
+        working-directory: site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Update status $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
