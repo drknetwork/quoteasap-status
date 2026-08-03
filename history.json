@@ -623,6 +623,14 @@
       "statusCode": 200,
       "responseTimeMs": 1861,
       "timestamp": "2026-08-03T18:59:25.423Z"
+    },
+    {
+      "name": "QuoteASAP App",
+      "url": "https://web-three-pi-25.vercel.app/api/health",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 1051,
+      "timestamp": "2026-08-03T20:36:04.059Z"
     }
   ],
   "QuoteASAP App (homepage)": [
@@ -1267,6 +1275,14 @@
       "statusCode": 200,
       "responseTimeMs": 464,
       "timestamp": "2026-08-03T18:59:24.026Z"
+    },
+    {
+      "name": "QuoteASAP Help (knowledge base)",
+      "url": "https://help-sandy-iota.vercel.app/",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 194,
+      "timestamp": "2026-08-03T20:36:03.201Z"
     }
   ],
   "QuoteASAP Marketing": [
@@ -1885,6 +1901,14 @@
       "statusCode": 200,
       "responseTimeMs": 591,
       "timestamp": "2026-08-03T18:59:23.956Z"
+    },
+    {
+      "name": "QuoteASAP Marketing",
+      "url": "https://quoteasap-marketing.vercel.app/",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 224,
+      "timestamp": "2026-08-03T20:36:03.187Z"
     }
   ],
   "QuoteASAP App (sign-in)": [
@@ -2495,6 +2519,14 @@
       "statusCode": 200,
       "responseTimeMs": 505,
       "timestamp": "2026-08-03T18:59:24.066Z"
+    },
+    {
+      "name": "QuoteASAP App (sign-in)",
+      "url": "https://web-three-pi-25.vercel.app/sign-in",
+      "success": true,
+      "statusCode": 200,
+      "responseTimeMs": 345,
+      "timestamp": "2026-08-03T20:36:03.351Z"
     }
   ]
 }
